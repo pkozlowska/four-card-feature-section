@@ -5,7 +5,7 @@ Desktop version:
 ![Desktop view](images/final-desktop.jpg)
 
 Mobile version: 
-![Mobile view](images/final-mobile.jp)
+![Mobile view](images/final-mobile.jpg)
 
 ## The challange
 
