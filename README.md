@@ -1,6 +1,11 @@
 # Frontend Mentor - Four card feature section
 This is a solution to the [Four Card Feature Section on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub)
-![](images/final-desktop.PNG)
+
+Desktop version:
+![Desktop view](images/final-desktop.jpg)
+
+Mobile version: 
+![Mobile view](images/final-mobile.jp)
 
 ## The challange
 
