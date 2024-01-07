@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /*PRIMARY COLORS*/
+  --supervisor-color: #44d3d2;
+  --team-builder-color: #ea5454;
+  --karma-color: #fcae4a;
+  --calculator-color: #549ef2;
+
+  /*NEUTRAL COLORS*/
+  --main-background-color: #fafafa;
+  --card-background-color: #ffffff;
+  --text-color: #4d4f62;
+
+  /*FONT WEIGHTS*/
+  --font-weight-light: 275;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /*WIDTHS*/
+  --single-card-min-width: 19.4375rem;
+  --single-card-max-width: 21.875rem;
+
+  /*HEIGHTS*/
+  --single-card-min-height: 13.875rem;
+  --single-card-max-height: 15.625rem;
+
+  /*BORDER-RADIUS*/
+  --border-radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--main-background-color);
+}
+
+.main-header-font-size {
+  font-size: 2.25rem;
+}
+
+.main-text-color {
+  color: var(--text-color);
+}
+
+h1 {
+  font-weight: var(--font-weight-light);
+}
+
+h2 {
+  font-weight: var(--font-weight-semibold);
+}
+
+p {
+  font-weight: var(--font-weight-regular);
+  opacity: 0.5;
+}
+
+.single-card {
+  min-width: var(--single-card-min-width);
+  max-width: var(--single-card-max-width);
+  min-height: var(--single-card-min-height);
+  max-height: var(--single-card-max-height);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  background-color: var(--card-background-color);
+}
+
+.single-card > h3 {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.single-card > p {
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-regular);
+  opacity: 0.5;
+}
+
+.single-card::before {
+  content: "";
+  display: block;
+  height: 0.25rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+#supervisor-card::before {
+  background-color: var(--supervisor-color);
+}
+
+#team-builder-card::before {
+  background-color: var(--team-builder-color);
+}
+
+#karma-card::before {
+  background-color: var(--karma-color);
+}
+
+#calculator-card::before {
+  background-color: var(--calculator-color);
+}
+
+#footer-container > p {
+  font-size: 0.75rem;
+  color: var(--text-color);
+}
+
+#footer-container > p > a {
+  text-decoration: none;
+  color: #34bd7d;
+  font-weight: var(--font-weight-semibold);
+}
+
+@media screen and (max-width: 1200px) {
+  .main-header-font-size {
+    font-size: 1.5rem;
+  }
+
+  .single-card {
+    min-width: var(--single-card-min-width);
+  }
+}

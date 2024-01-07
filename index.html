@@ -9,50 +9,83 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="layout.css" rel="stylesheet" type="text/css" />
     <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
     <header>
-      <h1>Reliable, efficient delivery</h1>
-      <h2>Powered by Technology</h2>
-      <p>
+      <h1 class="main-header-font-size main-text-color">
+        Reliable, efficient delivery
+      </h1>
+      <h2 class="main-header-font-size main-text-color">
+        Powered by Technology
+      </h2>
+      <p class="main-text-color">
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
     </header>
-    <main>
-      <div class="single-card">
-        <h3>Supervisor</h3>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="images/icon-supervisor.svg" alt="magnifier-img">
-      </div>
-      <div>
-        <div class="single-card">
-          <h3>Team Builder</h3>
-          <p>
-            Scans our talent network to create the optimal team for your project
+    <main id="cards-container">
+      <div id="supervisor-card" class="single-card">
+        <div class="single-card-content">
+          <h3 class="main-text-color">Supervisor</h3>
+          <p class="main-text-color">
+            Monitors activity to identify project roadblocks
           </p>
-          <img src="images/icon-team-builder.svg" alt="website-img">
-        </div>
-        <div class="single-card">
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <img src="images/icon-karma.svg" alt="bulb-img">
+          <img
+            class="card-img"
+            src="images/icon-supervisor.svg"
+            alt="magnifier-img"
+          />
         </div>
       </div>
-      <div class="single-card">
-        <h3>Calculator</h3>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="images/icon-calculator.svg" alt="monitor-img">
+      <div id="middle-section">
+        <div id="team-builder-card" class="single-card">
+          <div class="single-card-content">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img
+              class="card-img"
+              src="images/icon-team-builder.svg"
+              alt="website-img"
+            />
+          </div>
+        </div>
+        <div id="karma-card" class="single-card">
+          <div class="single-card-content">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img class="card-img" src="images/icon-karma.svg" alt="bulb-img" />
+          </div>
+        </div>
+      </div>
+      <div id="calculator-card" class="single-card">
+        <div class="single-card-content">
+          <h3>Calculator</h3>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            class="card-img"
+            src="images/icon-calculator.svg"
+            alt="monitor-img"
+          />
+        </div>
       </div>
     </main>
-    <footer>
-      <p>
+    <footer id="footer-container">
+      <p class="main-text-color">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">pkozlowska</a>.
+        >.
+      </p>
+      <p class="main-text-color">
+        Coded by <a href="https://github.com/pkozlowska">pkozlowska</a>.
       </p>
     </footer>
   </body>
